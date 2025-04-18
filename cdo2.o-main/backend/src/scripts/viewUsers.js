@@ -4,7 +4,7 @@ require('dotenv').config();
 
 async function viewUsers() {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://yadavanubhav848:$alm15lfJPPtmob4k@cluster1.dqcy3oc.mongodb.net/billing-portal?retryWrites=true&w=majority&appName=Cluster1');
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://yadavanubhav848:<db_password>@cluster0.szpod3z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
     console.log('Connected to MongoDB');
 
     const users = await User.find();
