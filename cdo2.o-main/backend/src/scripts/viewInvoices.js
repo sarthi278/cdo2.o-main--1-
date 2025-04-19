@@ -5,7 +5,7 @@ require('dotenv').config();
 async function viewInvoices() {
   try {
     // Connect to MongoDB
-    const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/billing-portal';
+    const uri = process.env.MONGODB_URI || 'mongodb+srv://yadavanubhav848:alm15lfJPPtmob4k@cluster0.szpod3z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     await mongoose.connect(uri);
     console.log('Connected to MongoDB');
 
