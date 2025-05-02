@@ -141,9 +141,9 @@ export default function Index() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <Label htmlFor="password">Password</Label>
-                  <Button variant="link" className="text-xs p-0 h-auto font-normal" type="button">
+{/*                   <Button variant="link" className="text-xs p-0 h-auto font-normal" type="button">
                     Forgot password?
-                  </Button>
+                  </Button> */}
                 </div>
                 <Input
                   id="password"
