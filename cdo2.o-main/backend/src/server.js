@@ -24,6 +24,14 @@ app.use('/api/auth', authRoutes);
 app.use('/api/billing', billingRoutes);
 app.use('/api/products', productRoutes);
 
+app.get ('/',(req,res)=>{
+ res.send({
+   activeStatus:true,
+   error:false,
+ })
+})
+
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
